@@ -56,7 +56,7 @@ h1.home-name {
 .cushion {
   position: relative;
   width: min(864px, 100%);
-  aspect-ratio: 864 / 576;
+  aspect-ratio: 864 / 584;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,12 +76,12 @@ h1.home-name {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 470px;
+  width: 644px;
   max-width: 94%;
   margin: 0;
   padding: 0;
-  column-gap: 85px;
-  row-gap: 2px;
+  column-gap: 40px;
+  row-gap: 6px;
   text-align: center;
 }
 .shelf li {
@@ -106,9 +106,25 @@ h1.home-name {
 .shelf li:focus-within {
   z-index: 2;
 }
-.pick:focus-visible, .item:focus-visible, .detail a:focus-visible, .reset:focus-visible {
+.pick:focus-visible, .item:focus-visible, .detail a:focus-visible, .reset:focus-visible, .music:focus-visible {
   outline: 3px solid var(--ink);
   outline-offset: 3px;
+}
+.music {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 3;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--rose);
+  font-family: "ZCOOL KuaiLe", "Microsoft YaHei", cursive;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(200, 90, 130, 0.22);
 }
 .star {
   display: block;
@@ -218,9 +234,9 @@ dialog h2 {
 .detail .related a { display: inline-block; margin: 8px 16px 0 0; color: var(--rose); font-size: 15px; }
 .detail .back { display: block; margin-top: 28px; }
 @media (max-width: 560px) {
-  .shelf { width: 268px; column-gap: 36px; row-gap: 0; }
-  .shelf li { width: 112px; }
-  .star { width: 108px; height: 90px; }
+  .shelf { width: 300px; max-width: 92%; column-gap: 8px; row-gap: 4px; }
+  .shelf li { width: 92px; }
+  .star { width: 92px; height: 77px; }
   .lid { margin-top: 0; font-size: 12px; }
   h1.home-name, .lead { font-size: 22px; }
   dialog { padding: 22px 18px 18px; }
